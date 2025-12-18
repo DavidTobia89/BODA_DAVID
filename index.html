@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <title>Boda de David y Mónica</title>
+
+  <!-- Cargar fuentes personalizadas con display=swap para mejor rendimiento percibido -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Íconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon (ejemplo, reemplaza con tu imagen optimizada) -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Barra de progreso del scroll -->
+  <div id="scrollBarContainer">
+    <div id="scrollBar"></div>
+  </div>
+
+  <div id="pantalla-inicial" class="pantalla">
+    <div class="cta-text">Haz clic en el sobre para abrir tu invitación <span role="img" aria-label="emoji de sobre">✉️</span></div>
+    <!-- Uso de <picture> para ofrecer WebP con fallback -->
+    <picture>
+      <source srcset="images/sobre.webp" type="image/webp">
+      <img id="sobre" class="sobre" src="images/sobre.jpeg" alt="Sobre de invitación" tabindex="0" role="button"
+        aria-label="Abrir invitación" />
+    </picture>
+  </div>
+
+  <main id="contenido-principal">
+    <section class="seccion reveal">
+      <h1 class="nombres">David & Mónica </h1>
+      <h2 class="titulo "> ¡Nos casamos!</h2>
+      <p class="fecha">12:00 hrs - 27 / 06 / 26 </p>
+      <p>Iglesia San Nicolás de Bari, Burgos</p>
+      <!-- Flecha animada -->
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2><i class="fas fa-church"> </i> Ceremonia</h2>
+      <p>El lugar de la ceremonia será la <strong>Iglesia San Nicolás de Bari</strong> en Burgos a las 12:00 h.</p>
+      <iframe src="https://www.google.com/maps?q=Iglesia+San+Nicol%C3%A1s+de+Bari,+Burgos&output=embed"
+        title="Mapa de ubicación de la Iglesia San Nicolás de Bari" allowfullscreen loading="lazy"></iframe>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2><i class="fas fa-champagne-glasses"> </i> Banquete</h2>
+      <p>El lugar del banquete será el <strong>Hotel Abba</strong> en Burgos.</p>
+      <p>Tiene plazas limitadas de parking y un 10% de descuento para huéspedes.</p>
+      <div>
+        <a href="https://www.google.com/maps?q=Calle+Fern%C3%A1n+Gonz%C3%A1lez,+72,+09003+Burgos" target="_blank"
+          class="boton" aria-label="Ver ubicación del Hotel Abba en Google Maps">
+          <i class="fas fa-map-marker-alt"></i> Ver ubicación
+        </a>
+        <a href="https://www.abbahoteles.com/es/destinos/abba-burgos-hotel/hotel.html" target="_blank" class="boton">
+          <i class="fas fa-hotel"></i> Página del hotel
+        </a>
+      </div>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2>📋 Formulario </h2>
+      <p>Por favor, completa el siguiente formulario para ayudarnos a organizar este día tan especial:</p>
+      <a class="boton" href="https://docs.google.com/forms/u/0/d/1TEZxsz0ZrALX4ZRESQOHn513-eJsIIFBOOM8Uo638jg/edit"
+        target="_blank">
+        <i class="fas fa-check-circle"></i> Confirmar asistencia
+      </a>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2>🎉 Fiestas en Burgos</h2>
+      <p>La ciudad estará en fiestas, así que podéis aprovechar para alargar la celebración.</p>
+      <p>Si te apetece seguir bailando, hay conciertos en la Plaza Santa María (Plaza de la catedral) y en la Plaza
+        Santa Teresa (al lado del Museo de la Evolución).</p>
+      <p>Si te has quedado con hambre, date una vuelta por la calle de los Herreros y pídete un “cojonudo” o una
+        “cojonuda”.</p>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2>☎️ Contacto</h2>
+      <p>Estamos preparando este día con mucho cariño.</p>
+      <p>¿Quieres contarnos algo? Pulsa el botón y cuéntanos. </p>
+      <div class="rsvp-buttons">
+        <a href="https://wa.me/34687254780?text=Hola,%20tengo%20la%20siguiente%20duda:" target="_blank"
+          class="rsvp-button">
+          <i class="fab fa-whatsapp"></i> DAVID
+        </a>
+        <a href="https://wa.me/34658697068?text=Hola,%20tengo%20la%20siguiente%20duda:" target="_blank"
+          class="rsvp-button">
+          <i class="fab fa-whatsapp"></i> MÓNICA
+        </a>
+      </div>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2>🎁 Lista de Boda</h2>
+      <p>Estar juntos ese día para nosotros es lo más importante, pero para el que pueda y quiera, os dejamos nuestro
+        número de cuenta:</p>
+      <div class="cuenta-container">
+        <span id="ibanText" class="cuenta">ES27 2100 5585 4402 0004 1824</span>
+        <button class="boton copiar-btn" onclick="copiarIBAN()">
+          <i class="fas fa-copy"></i> Copiar
+        </button>
+      </div>
+      <span id="copiadoMensaje" class="copiado-mensaje" aria-live="polite">¡IBAN Copiado!</span>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section class="seccion reveal">
+      <h2>⏳ Faltan</h2>
+      <div class="countdown-circle">
+        <div class="circle"><span id="days">00</span><small>Días</small></div>
+        <div class="circle"><span id="hours">00</span><small>Horas</small></div>
+        <div class="circle"><span id="minutes">00</span><small>Min</small></div>
+        <div class="circle"><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+      <h3><em>👰‍♀️ ¡OS ESPERAMOS! 🤵‍♂️</em></h3>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+
+    <section id="aparcamiento" class="seccion reveal">
+      <h2>🚗 Aparcamiento</h2>
+      <p>Si vienes en coche, estas son algunas opciones cercanas (pincha <span class="map-pin-icon-text">📌</span> para ver ubicación):</p>
+      <ul aria-label="Opciones de aparcamiento">
+        <li>
+          <a href="https://www.google.com/maps?q=Museo+de+la+Evoluci%C3%B3n+Humana+(MEH),+72,+09002+Burgos" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono museo">🏛️</span> <strong>Parking Evolución Humana</strong> : 12,60€/día <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps?q=Pl.+Vega,+09002+Burgos" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono parking">🅿️</span> <strong>Parking Plaza Vega</strong>: 9,95€/día · 5 min a pie <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps?q=Blvr.+Ferroviario,+2,+09001+Burgos" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono tren">🚂</span> <strong>Antigua Estación</strong> : Gratuito · 10-15 min a pie <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps?q=Plaza+de+Sta.+Teresa,+09002+Burgos" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono iglesia">🕍</span><strong>Santa Teresa</strong> : Zona azul · Gratis domingos <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps?q=C.+del+Molino,+09007+Burgos" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono gratis">🆓</span> <strong>Zonas blanca</strong>: C/ Molinillo (15 min a pie) <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps?q=Av.+Cantabria,+Burgos/@42.3411,-3.6888" target="_blank" rel="noopener noreferrer">
+            <span class="map-icon" role="img" aria-label="icono gratis">🆓</span> <strong>Zonas blanca</strong>: Av. Cantabria (20-30 min a pie) <span class="map-pin-icon">📌</span>
+          </a>
+        </li>
+      </ul>
+      <i class="fa-solid fa-arrow-down scroll-icon"></i>
+    </section>
+    <section id="autobus" class="seccion reveal">
+      <h2>🚌 Autobús</h2>
+      <p>Si habéis decidido venir en autobús, los horarios son los siguientes: </p>
+      <p>SALIDA: MURRIETA a las 09:30 hrs</p>
+      <p>VUELTA: HOTEL ABBA a las 22:00 hrs</p>
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>
+
