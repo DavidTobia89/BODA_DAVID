@@ -311,7 +311,8 @@ iframe {
 }
 
 .countdown-circle {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -472,7 +473,7 @@ iframe {
   .boton, .copiar-btn { padding: 0.7rem 1.1rem; font-size: 0.9rem; }
   .rsvp-buttons { flex-direction: column; align-items: center; gap: 0.8rem; }
 
-  .countdown-circle { gap: 0.5rem; flex-wrap: wrap; }
+  .countdown-circle { grid-template-columns: repeat(2, 1fr);gap: 0.5rem; }
   .circle { width: 70px; height: 70px; margin: 0.5rem; }
   .circle span { font-size: 1.5rem; }
   .circle small { font-size: 0.7rem; }
